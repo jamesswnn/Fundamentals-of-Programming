@@ -1,3 +1,5 @@
+'''การวนดูรถทีละคัน แล้วคัดเฉพาะรถที่ตรงกับเงื่อนไขที่กำหนด'''
+
 '''
 lab12-func-car-search-cp3681
 '''
@@ -18,7 +20,13 @@ cars = [
     {"id": 12, "brand": "Mazda", "model": "CX-5", "year": 2021, "price": 1000000},
 ]
 # ---------------------------------------------------------------
-
+'''
+**kwargs = {
+    brand : brand_input 
+    model : model_input
+    year : year_input
+}
+'''
 def search_car(car_list, min_price, max_price, **kwargs):
     """
     คืนค่ารายการ ID ของรถยนต์ที่ตรงตามเงื่อนไขทุกข้อ (ราคา + **kwargs)
@@ -43,7 +51,9 @@ def search_car(car_list, min_price, max_price, **kwargs):
             continue
 
         matches = True
+        #วน brand, model, yearทีละตัว
         for key in kwargs:
+            #ถ้าข้อมูลของdict car ไม่ตรงกับ dict **kwargs ให้เป็นfalse
             if car[key] != kwargs[key]:
                 matches = False
                 break
