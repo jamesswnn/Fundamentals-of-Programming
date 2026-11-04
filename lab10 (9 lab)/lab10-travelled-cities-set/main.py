@@ -1,7 +1,6 @@
 '''
 lab10-travelled-cities-set
 '''
-
 num1 = int(input())
 
 cities = dict()

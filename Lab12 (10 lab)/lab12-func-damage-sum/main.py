@@ -1,8 +1,7 @@
 '''
 lab12-func-damage-sum
 '''
-# YOUR CODE HERE
-# function for calculating damage
+
 def total_Damage(Q, E, R, **kwarv):
     total_Damage = 0
 
@@ -12,10 +11,6 @@ def total_Damage(Q, E, R, **kwarv):
 
     return ((sum(Q) + E + R) * (100 + Buff) / 100) * (100 - Resistance) / 100 + Addition
 
-
-# Main program to retrieve inputs,
-# Call total_Damage function, and
-# Print the total damage.
 Q = int(input())
 Q_list = []
 
@@ -45,4 +40,8 @@ if Addition_input == "-":
 else:
     Addition_input = int(Addition_input)
 
-print(total_Damage(Q = Q_list, E = E_input, R = R_input, Buff = Buff_input, Resistance = Resistance_input, Addition = Addition_input))
+print(total_Damage(Q, E, R, Buff = Buff_input, 
+                   Resistance = Resistance_input, Addition = Addition_input))
+
+
+

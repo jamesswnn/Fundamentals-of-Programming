@@ -1,10 +1,7 @@
 '''
 lab11-func-finding-primes
 '''
-# YOUR CODE HERE
-
 primes = [2]
-
 
 def is_prime(num):
     global primes
@@ -14,7 +11,6 @@ def is_prime(num):
             return False
 
     return True
-
 
 n = int(input())
 

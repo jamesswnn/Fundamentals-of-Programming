@@ -2,8 +2,6 @@
 lab12-list-interleaving
 '''
 
-# YOUR CODE HERE
-
 n1 = int(input())
 n2 = int(input())
 
@@ -18,7 +16,6 @@ for _ in range(n2):
     list2_input = input()
     list2.append(list2_input)
 
-
 def list_interleaving(list1, list2):
     result = []
 
@@ -31,5 +28,5 @@ def list_interleaving(list1, list2):
 
     return result
 
-
 print(list_interleaving(list1, list2))
+

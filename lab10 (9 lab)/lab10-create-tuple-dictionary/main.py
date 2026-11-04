@@ -21,3 +21,4 @@ for student, score in student_dict.items():
         max_student = student
 
 print(f"Firstname: {max_student[0]}, Last name: {max_student[1]}")
+

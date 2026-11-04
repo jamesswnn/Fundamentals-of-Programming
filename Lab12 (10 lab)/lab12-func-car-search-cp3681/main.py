@@ -4,7 +4,6 @@
 lab12-func-car-search-cp3681
 '''
 
-# ---------------- ข้อมูลรถยนต์ (ห้ามแก้)----------------
 cars = [
     {"id": 1, "brand": "Toyota", "model": "Camry", "year": 2021, "price": 1200000},
     {"id": 2, "brand": "Honda", "model": "Civic", "year": 2020, "price": 950000},
@@ -19,7 +18,6 @@ cars = [
     {"id": 11, "brand": "Toyota", "model": "Camry", "year": 2022, "price": 1300000},
     {"id": 12, "brand": "Mazda", "model": "CX-5", "year": 2021, "price": 1000000},
 ]
-# ---------------------------------------------------------------
 '''
 **kwargs = {
     brand : brand_input 
@@ -28,21 +26,6 @@ cars = [
 }
 '''
 def search_car(car_list, min_price, max_price, **kwargs):
-    """
-    คืนค่ารายการ ID ของรถยนต์ที่ตรงตามเงื่อนไขทุกข้อ (ราคา + **kwargs)
-    
-    *** ข้อบังคับ: ต้องใช้ค่าจาก **kwargs เท่านั้นในการค้นหา Brand, Model, และ Year ***
-    *** ห้ามนักเรียนอ้างอิงถึงตัวแปร Global เช่น brand_input โดยเด็ดขาด มิฉะนั้นจะได้ 0 คะแนน ***
-    
-    Arguments:
-        car_list (list): รายการรถยนต์ทั้งหมด
-        min_price (int): ราคาขั้นต่ำที่ต้องการ
-        max_price (int): ราคาขั้นสูงที่ต้องการ
-        **kwargs: เงื่อนไขการค้นหาเพิ่มเติม (เช่น brand="Toyota", model="Civic", year=2021)
-
-    Returns:
-        list[int]: รายการ ID ของรถยนต์ที่ตรงตามเงื่อนไขทั้งหมด
-    """
     result = [] #เช่น [1,2]
     #เติมโค้ดที่นี่
     for car in car_list:
@@ -63,18 +46,16 @@ def search_car(car_list, min_price, max_price, **kwargs):
 
     return result
 
-
-# ---------------- การรับ Input 5 บรรทัด (ห้ามแก้)----------------
-# ตัวแปรเหล่านี้ถูกเก็บไว้ใน Global Scope แต่ห้ามนำไปใช้ในฟังก์ชัน search_car
 brand_input = input().strip()
 model_input = input().strip()
 year_input = int(input().strip())
 min_price = int(input().strip())
 max_price = int(input().strip())
 
-
-# การเรียกใช้ฟังก์ชัน: ส่งตัวแปร Input ทั้ง 3 ตัวเป็น Key-Value Arguments (**kwargs) (ห้ามแก้)
 print(search_car(cars, min_price, max_price, brand=brand_input))
 print(search_car(cars, min_price, max_price, model=model_input))
 print(search_car(cars, min_price, max_price, year=year_input))
-print(search_car(cars, min_price, max_price, brand=brand_input, model=model_input, year=year_input))
+print(search_car(cars, min_price, max_price, brand=brand_input, 
+                 model=model_input, year=year_input))
+
+

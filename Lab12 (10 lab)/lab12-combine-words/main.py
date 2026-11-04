@@ -21,10 +21,10 @@ def combine_words(word, **kwargs):
     else:
         return word
 
-
 # Given this code, please fill-in the content in combine_words function
 input_text = input()  # work
 position_text = input()  # prefix
 extra_text = input()  # home
+# homework
+print(combine_words(input_text, position=position_text, extra=extra_text))  
 
-print(combine_words(input_text, position=position_text, extra=extra_text))  # homework

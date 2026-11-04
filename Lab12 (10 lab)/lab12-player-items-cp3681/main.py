@@ -1,7 +1,6 @@
 '''
 lab12-player-items-cp3681
 '''
-# YOUR CODE GOES HERE
 P = int(input()) #player count
 I = int(input()) #item_count
 A = int(input()) #assignment_line
@@ -36,3 +35,6 @@ for player in players:
         total_weight += item_weight[item]
 
     print(player, total_weight)
+    
+    
+    

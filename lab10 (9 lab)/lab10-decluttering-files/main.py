@@ -27,3 +27,5 @@ if len(folder_1 & folder_2) == 0:
     print("No duplicated found...")
 else:
     print(sorted(folder_1 & folder_2))
+
+

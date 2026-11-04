@@ -2,8 +2,6 @@
 lab11-list-manipulation
 '''
 
-# YOUR CODE HERE
-
 def list_manipulation(A_list, command, location, value):
     if command == 'remove' and location == 'end':
         A_list.pop()
@@ -26,3 +24,4 @@ location = input()
 value = input()
 
 print(list_manipulation(A_list, command, location, value))
+

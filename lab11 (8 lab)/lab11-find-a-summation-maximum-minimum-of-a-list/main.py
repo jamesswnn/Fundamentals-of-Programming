@@ -1,8 +1,6 @@
 '''
 lab11-find-a-summation-maximum-minimum-of-a-list
 '''
-
-# YOUR CODE HERE
 n = int(input())
 list1 = []
 list2 = []

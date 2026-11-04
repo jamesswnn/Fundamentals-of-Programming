@@ -3,7 +3,6 @@ lab11-calculate-3d-distance
 '''
 import math
 
-
 def cal_dist(x1=7.0, y1=4.0, z1=3.0,
              x2=17.0, y2=6.0, z2=2.0):
 
@@ -14,7 +13,6 @@ def cal_dist(x1=7.0, y1=4.0, z1=3.0,
     )
 
     return round(dict, 2)
-
 
 x1 = input()
 y1 = input()

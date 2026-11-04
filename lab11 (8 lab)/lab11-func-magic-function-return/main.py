@@ -6,7 +6,6 @@ import math
 num1 = int(input())
 magic_results = dict()
 
-
 def magic_function(x1, y1):
     x_d = (x1 * 0.0174) - 0.2400
     y_d = (y1 * 0.0174) - 1.7456
@@ -18,7 +17,6 @@ def magic_function(x1, y1):
     )), 2)
 
     return D
-
 
 for i in range(num1):
     x1 = round(float(input()), 2)
@@ -39,10 +37,11 @@ for j in range(num2):
     if position in magic_results:
         if magic_results[position] == z:
             print("Precisely")
-        else:  # magic_results[position] == z:
+        else:  
             difference = round(magic_results[position] - z, 2)
             print(f"Diff by: {difference}")
     else:
         result = magic_function(x, y)
         print(f"New target {result} km away")
         magic_results[position] = result
+
