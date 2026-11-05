@@ -3,7 +3,7 @@ words = input().lower()
 clean_words = ""
 
 for char in words:
-    if char.isalnum():
+    if char.isalpha():
         clean_words = clean_words + char
 
 reverse_words = clean_words[::-1]
