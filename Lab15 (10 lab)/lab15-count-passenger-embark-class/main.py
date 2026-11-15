@@ -1,5 +1,4 @@
 # lab15-count-passenger-embark-class
-
 import pandas as pd
 
 df = pd.read_csv('data.csv')
