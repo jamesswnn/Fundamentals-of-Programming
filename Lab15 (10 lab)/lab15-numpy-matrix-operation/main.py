@@ -1,12 +1,5 @@
 #lab15-numpy-matrix-operation
-
 import numpy as np
-
-# 1. รับชื่อไฟล์ของ A, B และ C
-# 2. อ่านข้อมูลจากไฟล์
-# 3. ตรวจสอบ dimension
-# 4. หาก dimension ไม่ถูกต้อง ให้พิมพ์ shape ของ A, B และ C และข้อความ ข้อความ Invalid matrix dimensions
-# 5. หาก dimension ถูกต้อง แสดงผล (A + B) @ C 
 
 file_A = input()
 file_B = input()
