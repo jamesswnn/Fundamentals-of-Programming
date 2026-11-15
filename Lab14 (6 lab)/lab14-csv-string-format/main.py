@@ -1,5 +1,4 @@
 #lab14-csv-string-format
-
 student = input()
 student = student.split(",")
 
