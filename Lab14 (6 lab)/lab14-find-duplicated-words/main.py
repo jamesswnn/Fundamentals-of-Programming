@@ -1,3 +1,5 @@
+#lab14-find-duplicated-words
+
 words = str(input())
 words = words.split(" ")
 

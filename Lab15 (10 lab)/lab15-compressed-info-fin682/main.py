@@ -1,11 +1,6 @@
-### START import
-# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้
+#lab15-compressed-info-fin682
+
 import numpy as np
-#### END import
-
-
-
-#### START Functions
 
 ## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล
 def encode_data(arr1, arr2):

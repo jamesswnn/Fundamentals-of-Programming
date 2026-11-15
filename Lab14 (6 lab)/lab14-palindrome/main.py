@@ -1,3 +1,5 @@
+#lab14-palindrome
+
 words = input().lower()
 
 clean_words = ""

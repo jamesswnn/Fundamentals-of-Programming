@@ -1,3 +1,5 @@
+#lab14-remove-symbol-from-string
+
 words = input()
 result = ""
 

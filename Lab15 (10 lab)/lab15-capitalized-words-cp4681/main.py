@@ -1,4 +1,4 @@
-# YOUR CODE GOES HERE
+# lab15-capitalized-words-cp4681
 
 words = input().split()
 new_words = []

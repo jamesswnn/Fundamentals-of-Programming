@@ -1,3 +1,5 @@
+#lab15-numpy-matrix-operation
+
 import numpy as np
 
 # 1. รับชื่อไฟล์ของ A, B และ C

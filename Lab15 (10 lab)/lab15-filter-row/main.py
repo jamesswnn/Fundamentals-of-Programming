@@ -1,3 +1,5 @@
+#lab15-filter-row
+
 import numpy as np
 
 # TODO#1 - รับข้อมูล 2D Array

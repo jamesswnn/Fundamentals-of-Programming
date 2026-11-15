@@ -1,4 +1,4 @@
-# Your Python code goes here
+# lab15-avg-col-sum-matrix
 
 import numpy as np
 
