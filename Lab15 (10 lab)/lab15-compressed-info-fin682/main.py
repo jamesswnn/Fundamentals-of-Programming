@@ -1,5 +1,4 @@
 #lab15-compressed-info-fin682
-
 import numpy as np
 
 def encode_data(arr1, arr2):
